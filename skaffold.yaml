@@ -8,7 +8,7 @@ build:
   local:
     push: false
   artifacts:
-    - image: rallycoding/auth
+    - image: evanhd/auth
       context: auth
       docker:
         dockerfile: Dockerfile
