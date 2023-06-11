@@ -8,7 +8,8 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run clean && tsc",
-    "clean": "del-cli ./build/*"
+    "clean": "del-cli ./build/*",
+    "pub": "git add . && git commit -m \"Updates\" && npm version patch && npm run build && npm publish"
   },
   "dependencies": {
     "@types/cookie-session": "^2.0.44",
