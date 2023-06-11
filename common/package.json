@@ -1,15 +1,18 @@
 {
   "name": "@the-tickets/common",
-  "version": "1.0.14",
+  "version": "1.0.0",
   "description": "",
   "keywords": [],
   "license": "ISC",
   "author": "",
-  "main": "index.js",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
   "scripts": {
     "build": "npm run clean && tsc",
-    "clean": "del-cli ./build/*",
-    "pub": "git add . && git commit -m \"Updates\" && npm version patch && npm run build && npm publish"
+    "clean": "del-cli ./build/*"
   },
   "dependencies": {
     "@types/cookie-session": "^2.0.44",
