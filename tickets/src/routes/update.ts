@@ -1,4 +1,8 @@
-import { NotFoundError, requireAuth } from '@the-tickets/common';
+import {
+  NotAuthorizedError,
+  NotFoundError,
+  requireAuth,
+} from '@the-tickets/common';
 import express, { Request, Response } from 'express';
 import { Ticket } from '../models/ticket';
 
@@ -12,6 +16,10 @@ router.put(
 
     if (!ticket) {
       throw new NotFoundError();
+    }
+
+    if (ticket.userId !== req.currentUser!.id) {
+      throw new NotAuthorizedError();
     }
 
     res.send(ticket);
