@@ -8,7 +8,7 @@ build:
   local:
     push: false
   artifacts:
-    - image: evanhd/auth
+    - image: evanhd/ticketing-auth
       context: auth
       docker:
         dockerfile: Dockerfile
@@ -24,7 +24,7 @@ build:
         manual:
           - src: '**/*.js'
             dest: .
-    - image: evanhd/tickets
+    - image: evanhd/ticketing-tickets
       context: tickets
       docker:
         dockerfile: Dockerfile
