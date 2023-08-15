@@ -18,7 +18,7 @@
     "testEnvironment": "node"
   },
   "dependencies": {
-    "@the-tickets/common": "^1.0.3",
+    "@the-tickets/common": "^1.0.5",
     "@types/cookie-session": "^2.0.44",
     "@types/express": "^4.17.17",
     "@types/jsonwebtoken": "^9.0.2",
@@ -37,7 +37,7 @@
     "@types/jest": "^29.5.3",
     "@types/supertest": "^2.0.12",
     "jest": "^29.6.2",
-    "mongodb-memory-server": "^8.14.0",
+    "mongodb-memory-server": "^8.15.0",
     "supertest": "^6.3.3",
     "ts-jest": "^29.1.1"
   }
