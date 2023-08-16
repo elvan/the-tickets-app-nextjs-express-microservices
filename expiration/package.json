@@ -18,7 +18,7 @@
     "testEnvironment": "node"
   },
   "dependencies": {
-    "@the-tickets/common": "^1.0.6",
+    "@the-tickets/common": "^1.0.7",
     "@types/bull": "^3.15.9",
     "bull": "^3.29.3",
     "node-nats-streaming": "^0.3.2",
