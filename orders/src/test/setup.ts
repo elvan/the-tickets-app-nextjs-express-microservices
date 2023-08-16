@@ -5,7 +5,6 @@ import mongoose from 'mongoose';
 declare global {
   var signin: () => string[];
 }
-
 jest.mock('../nats-wrapper');
 
 let mongo: any;

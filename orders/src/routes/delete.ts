@@ -1,12 +1,11 @@
 import {
   NotAuthorizedError,
   NotFoundError,
-  OrderStatus,
   requireAuth,
 } from '@the-tickets/common';
 import express, { Request, Response } from 'express';
 import { OrderCancelledPublisher } from '../events/publishers/order-cancelled-publisher';
-import { Order } from '../models/order';
+import { Order, OrderStatus } from '../models/order';
 import { natsWrapper } from '../nats-wrapper';
 
 const router = express.Router();
